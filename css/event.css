@@ -1,0 +1,361 @@
+main {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: #f2edef;
+}
+
+/* 할망 */
+.halmang {
+    padding-top: 120px;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.halmang>h2 {
+    font-size: clamp(18px, 1.77vw, 32px);
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.halmang p {
+    font-size: clamp(14px, 0.94vw, 20px);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.halmang-pic {
+    max-width: 650px;
+    max-height: 812px;
+    margin: 0 auto;
+}
+
+.halmang-pic img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* 행사 */
+.hangsa-1 {
+  width: 100%;
+  max-width: 1320px;  
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px; /* 좌우 패딩으로 여백 */
+  box-sizing: border-box;
+}
+
+.poster {
+  flex: 1 1 50%;
+  padding: 85px 20px 85px 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.poster img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text {
+  flex: 1 1 50%;
+  padding: 85px 0;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* clamp는 폰트 크기를 최소~최대 제한 */
+.text > h3 {
+  font-size: clamp(18px, 1.77vw, 32px);
+  font-weight: bold;
+}
+
+.text > h4 {
+  font-size: clamp(14px, 0.94vw, 20px);
+  padding-top: 40px;
+}
+
+.text > p {
+  font-size: clamp(14px, 0.94vw, 18px);
+  padding-top: 20px;
+}
+
+.text::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 540%;
+  background: #574747;
+  top: 0;
+  right: 100%;
+}
+
+.poster::after {
+  content: "";
+  position: absolute;
+  right: 0%;
+  transform: translateX(50%);
+  bottom: 0;
+  width: 50%;
+  height: 1px;
+  background: #574747;
+}
+
+.hangsa-2 {
+
+    max-width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.poster-2 {
+    flex: 1 1 50%;
+    padding: 85px 0px 85px 20px;
+    /* border-left: 1px solid #574747; */
+    position: relative;
+}
+
+.poster-2::after {
+    content: "";
+    position: absolute;
+    right: 100%;
+    transform: translateX(50%);
+    bottom: 0;
+    width: 100%;
+    height: 0.05vw;
+    background: #574747;
+}
+
+.poster-2 img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.text-2 > h3 {
+  font-size: clamp(18px, 1.77vw, 32px);
+  font-weight: bold;
+}
+
+.text-2 > h4 {
+  font-size: clamp(14px, 0.94vw, 20px);
+  padding-top: 40px;
+}
+
+.text-2 > p {
+  font-size: clamp(14px, 0.94vw, 18px);
+  padding-top: 20px;
+}
+.text-2 {
+    flex: 1 1 50%;
+    padding: 85px 0;
+    text-align: center;
+}
+
+
+
+.poster-3 {
+    flex: 1 1 50%;
+    padding: 85px 20px 85px 0;
+    /* border-left: 1px solid #574747; */
+    position: relative;
+}
+
+.poster-3::after {
+    content: "";
+    position: absolute;
+    right: 0%;
+    transform: translateX(50%);
+    bottom: 0;
+    width: 200%;
+    height: 0.05vw;
+    background: #574747;
+}
+
+.poster-3 img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.text-3 {
+    flex: 1 1 50%;
+    padding: 85px 0;
+    text-align: center;
+}
+
+.text-3 > h3 {
+  font-size: clamp(18px, 1.77vw, 32px);
+  font-weight: bold;
+}
+
+.text-3 > h4 {
+  font-size: clamp(14px, 0.94vw, 20px);
+  padding-top: 40px;
+}
+
+.text-3 > p {
+  font-size: clamp(14px, 0.94vw, 18px);
+  padding-top: 20px;
+}
+
+
+.poster-4 {
+    flex: 1 1 50%;
+    padding: 85px 0px 85px 20px;
+    /* border-left: 1px solid #574747; */
+    position: relative;
+}
+
+.poster-4 img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+/* 동그란영역 */
+
+.circle-section {
+    background: #f2edef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* 화면 꽉차게 */
+}
+
+.circle-wrapper {
+    text-align: center;
+    position: relative;
+}
+
+.circle-border {
+    position: relative;
+    width: 614px;
+    /* 바깥 원 크기 */
+    height: 614px;
+    border: 1px solid #574747;
+    border-radius: 50%;
+}
+
+.circle-image {
+    position: absolute;
+    top: 43.5%;
+    left: 50%;
+    width: 568px;
+    /* 안쪽 이미지 원 크기 */
+    height: 568px;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 50%;
+    transition: transform 15s linear; /* 회전 애니메이션 부드럽게 */
+}
+
+.circle-image:hover {
+  transform: translate(-50%, -50%) rotate(360deg);
+}
+
+.circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.circle-btn {
+    display: inline-block;
+    padding: 10px 50px;
+    margin-top: 40px;
+    font-size: 18px;
+    position: relative;
+    border-top: #574747 1px solid;
+    border-bottom: #574747 1px solid;
+}
+
+.circle-border::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 150%;
+    transform: translateX(50%);
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #574747;
+}
+
+@media (max-width: 1024px) {
+    .halmang{
+        padding-bottom: 60px;
+        border-bottom: 1px solid #574747;
+    }
+  .hangsa-1 {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    /* border-top: 1px solid #574747 ; */
+  }
+
+  .hangsa-2 {
+    flex-direction: column;
+    align-items: center;
+    border-bottom: #574747 1px solid;
+  }
+  .poster, .text {
+    flex: 1 1 100%;
+    padding: 40px 0;
+  }
+
+  .text::after {
+    display: none; 
+  }
+
+  .poster::after {
+    display: none; 
+}
+
+ .poster-2::after {
+    display: none; 
+}
+
+ .poster-3::after {
+    display: none; 
+}
+.poster img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.text {
+    flex: 1 1 50%;
+    padding: 85px 0;
+    /* display: block;
+  align-items: center; */
+    text-align: center;
+    position: relative;
+    border-bottom: #574747 solid 1px;
+}
+
+.text::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 450vh;
+    /* 반응형으로 만들려면 스크립트로 해야할거같음 */
+    background: #574747;
+    top: 0%;
+    right: 100%;
+}
+
+.text-3{
+    border-bottom: #574747 1px solid;
+}
+}
